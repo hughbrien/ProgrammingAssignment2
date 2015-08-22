@@ -26,11 +26,3 @@ makeCacheMatrix <- function(x = matrix()) {
   
 }
 
-
-m1 <- matrix(c(1,0,0,0,
-               0,1,0,0,
-               0,0,1,0,
-               1,0,0,1), nrow = 4, ncol = 4)
-r1$get()
-r1$getInverse()
-
