@@ -1,4 +1,4 @@
-# 
+# Cache Gettter and Seeter
 cachesolve <- function(x, ...) { 
   i<- x$getInverse()
   if(!is.null(i)) {
@@ -11,6 +11,7 @@ cachesolve <- function(x, ...) {
   i
 }
 
+# Create the inverse matrix using solve
 makeCacheMatrix <- function(x = matrix()) {
   
   i <- NULL
@@ -31,11 +32,7 @@ m1 <- matrix(c(1,0,0,0,
                0,0,1,0,
                1,0,0,1), nrow = 4, ncol = 4)
 
-
-
 m1
-
-
 r1 <- makeCacheMatrix(m1)
 r1$get()
 r2 <- makeCacheMatrix(m1)
