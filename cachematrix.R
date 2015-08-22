@@ -31,14 +31,6 @@ m1 <- matrix(c(1,0,0,0,
                0,1,0,0,
                0,0,1,0,
                1,0,0,1), nrow = 4, ncol = 4)
-
-m1
-r1 <- makeCacheMatrix(m1)
-r1$get()
-r2 <- makeCacheMatrix(m1)
-r2
-r3 <- makeCacheMatrix(m1)
-r3
 r1$get()
 r1$getInverse()
 
